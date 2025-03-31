@@ -1,0 +1,157 @@
+body {
+  padding-top: 76px; /* For fixed navbar */
+}
+
+@media (max-width: 768px) {
+  .product-card .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+/* Product Card Enhancements */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Product Detail Page */
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.thumbnail {
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.thumbnail.active {
+  border-color: #0d6efd;
+}
+
+.main-image {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  background: #f8f9fa;
+}
+
+/* Checkout Page */
+.StripeElement {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-image {
+    height: 300px;
+  }
+  
+  .thumbnail {
+    height: 60px;
+  }
+  
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+}
+/* index.css */
+.cart-item-image {
+  max-height: 120px;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.quantity-controls .btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cart-item-image {
+    max-height: 80px;
+  }
+  
+  .quantity-controls .btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+  
+  .cart-page h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Add these styles to your CSS file */
+.hero-banner {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.category-card {
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  background-color: #f8f9fa;
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
