@@ -10,7 +10,7 @@ A sleek single-page e-commerce demo built with React and React Bootstrap, showca
 
 [![Live Demo](https://img.shields.io/badge/LIVE_DEMO-Click_Here-2EA44F?style=for-the-badge)](https://cartshoppy.netlify.app/)
 
-![App Screenshot](/public/screenshot.png) *(Add your screenshot here)*
+
 
 ## ✨ Key Features
 
